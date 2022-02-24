@@ -1100,7 +1100,7 @@ def output_to_target(output, width, height):
 
                 targets.append([i, cls, x, y, w, h, conf])
 
-    return np.array(targets)
+    return np.array(targets.cpu())
 
 
 def increment_dir(dir, comment=''):
